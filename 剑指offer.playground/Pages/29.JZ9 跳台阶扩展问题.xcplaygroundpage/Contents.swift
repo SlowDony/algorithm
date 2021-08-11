@@ -7,6 +7,11 @@
  复制
  返回值：
  4
+ 
+ 思路 : f(n) = f(n-1)+f(n-2)+...+f(0)
+      f(n-1) = f(n-2)+f(n-3)+...+f(0)
+      f(n) = 2*f(n-1)
+ 
  */
 
 import Foundation
@@ -20,7 +25,14 @@ public class Solution {
      */
     func jumpFloorII ( _ number: Int) -> Int {
         // write code here
-        return 0
+        guard number>1 else {
+            return number
+        }
+        var a = 1
+        for _ in 2...number {
+            a <<= 1 //左移乘2 右移除2
+        }
+        return a
     }
 }
 
