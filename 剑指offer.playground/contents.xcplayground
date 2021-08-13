@@ -41,5 +41,11 @@
         <page name='38.JZ59 按之字形顺序打印二叉树'/>
         <page name='39.JZ60 把二叉树打印成多行'/>
         <page name='40.JZ62 二叉搜索树的第k个结点'/>
+        <page name='41.JZ30 连续子数组的最大和'/>
+        <page name='42.JZ45 扑克牌顺子'/>
+        <page name='43.JZ48 不用加减乘除做加法'/>
+        <page name='44.JZ47 求1+2+3+...+n'/>
+        <page name='45.JZ11 二进制中1的个数'/>
+        <page name='46.JZ12 数值的整数次方'/>
     </pages>
 </playground>
