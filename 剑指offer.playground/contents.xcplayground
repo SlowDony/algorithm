@@ -35,5 +35,11 @@
         <page name='32.JZ18 二叉树的镜像'/>
         <page name='33.JZ17 树的子结构'/>
         <page name='34.JZ38 二叉树的深度'/>
+        <page name='35.JZ39 平衡二叉树'/>
+        <page name='36.JZ57 二叉树的下一个结点'/>
+        <page name='37.JZ58 对称的二叉树'/>
+        <page name='38.JZ59 按之字形顺序打印二叉树'/>
+        <page name='39.JZ60 把二叉树打印成多行'/>
+        <page name='40.JZ62 二叉搜索树的第k个结点'/>
     </pages>
 </playground>

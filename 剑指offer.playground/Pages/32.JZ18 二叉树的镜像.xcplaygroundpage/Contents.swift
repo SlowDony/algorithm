@@ -37,7 +37,7 @@ public class TreeNode {
 
 class Solution {
     func mirrorTree(_ root: TreeNode?) -> TreeNode? {
-        if var root = root {
+        if let root = root {
             let left = mirrorTree(root.left)
             let right = mirrorTree(root.right)
             root.left = right
@@ -45,9 +45,6 @@ class Solution {
             return root
         }else{
             return root
-        }
-        
-        
-        
+        } 
     }
 }

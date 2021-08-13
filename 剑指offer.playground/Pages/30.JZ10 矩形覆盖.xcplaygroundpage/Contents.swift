@@ -49,4 +49,4 @@ public class Solution {
 }
 
 let sol = Solution()
-sol.rectCover(3)
+sol.rectCover1(4)
