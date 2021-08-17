@@ -47,5 +47,15 @@
         <page name='44.JZ47 求1+2+3+...+n'/>
         <page name='45.JZ11 二进制中1的个数'/>
         <page name='46.JZ12 数值的整数次方'/>
+        <page name='47.JZ26 二叉搜索树与双向链表 '/>
+        <page name='48.JZ31 整数中1出现的次数（从1到n整数中1出现的次数）'/>
+        <page name='49.JZ19 顺时针打印矩阵'/>
+        <page name='50.JZ33 丑数'/>
+        <page name='51.JZ35 数组中的逆序对'/>
+        <page name='52.JZ40 数组中只出现一次的两个数字'/>
+        <page name='53.JZ41 和为S的连续正数序列'/>
+        <page name='54.JZ46 孩子们的游戏(圆圈中最后剩下的数)'/>
+        <page name='55.JZ54 字符流中第一个不重复的字符'/>
+        <page name='56.剪绳子'/>
     </pages>
 </playground>

@@ -22,7 +22,34 @@ public class Solution {
      * @param exponent int整型
      * @return double浮点型
      */
+//    2 3
     func Power ( _ base: Double,  _ exponent: Int) -> Double {
         // write code here
+        if base == 0 {
+            return 0
+        }
+        var base = base //2
+        var b = exponent //3
+        var res = 1.0
+        
+        if b < 0 {
+            base = 1/base
+            b = -b
+        }
+        
+        while b > 0 {
+            if b & 1 == 1 {
+                res *= base
+            }
+            base *= base
+            b >>= 1
+            print(b)
+        }
+        
+        
+        return res
     }
 }
+
+let sol = Solution()
+sol.Power(2, 3)
