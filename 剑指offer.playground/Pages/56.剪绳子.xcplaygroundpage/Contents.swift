@@ -12,6 +12,18 @@
  复制
  返回值：
  18
+ 
+ 核心思路是：尽可能把绳子分成长度为3的小段，这样乘积最大
+
+ 证明可参考这个题解
+
+ 步骤如下：
+
+ 如果 n == 2，返回1，如果 n == 3，返回2，两个可以合并成n小于4的时候返回n - 1
+ 如果 n == 4，返回4
+ 如果 n > 4，分成尽可能多的长度为3的小段，每次循环长度n减去3，乘积res乘以3；最后返回时乘以小于等于4的最后一小段
+ 以上2和3可以合并
+
  */
 import Foundation
 
@@ -24,5 +36,15 @@ public class Solution {
      */
     func cutRope ( _ number: Int) -> Int {
         // write code here
+        var number = number
+        if number==2 || number == 3 {
+            return number - 1
+        }
+        var res = 1
+        while number>4 {
+            number -= 3
+            res *= 3
+        }
+        return res*number
     }
 }

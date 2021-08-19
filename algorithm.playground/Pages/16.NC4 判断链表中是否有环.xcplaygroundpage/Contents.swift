@@ -27,4 +27,36 @@ import Foundation
  }
  */
 
+public class ListNode {
+   public var val: Int
+   public var next: ListNode?
+   public init(_ val: Int = 0, _ next: ListNode? = nil) {
+     self.val = val
+     self.next = next
+   }
+   static public func descr(_ head:ListNode?){
+            var node = head
+            while node != nil{
+                print("\(node?.val ?? 0) ")
+                node = node?.next
+            }
+        }
+}
+class Solution {
+    func hasCycle(_ head: ListNode?) -> Bool {
+        var fast = head?.next
+        var slow = head
+        while slow != nil && fast != nil {
+            if slow === fast
+            {
+                return true
+            }
+            slow = slow?.next
+            fast = fast?.next?.next
+        }
+        return false
+    }
+}
+
+
 

@@ -26,7 +26,10 @@ public class Solution {
                 1.终止条件,2递归调用,3,逻辑处理
      
      */
-    func ReverseList ( _ head: ListNode?) -> ListNode? {
+    
+   
+    //递归
+    func ReverseList1 ( _ head: ListNode?) -> ListNode? {
         // write code here
         //终止条件
         if head == nil || head?.next == nil {
@@ -42,17 +45,35 @@ public class Solution {
         //head节点当成了反转后的尾节点
         head?.next = nil
         return p
-        
-//        var pre:ListNode? = nil
-//        var curr = head
-//        while (curr != nil){
-//            let next = curr?.next
-//            curr?.next = pre
-//            pre = curr
-//            curr = next
-//        }
-//        return pre
+    }
+    //迭代(双指针)
+    func ReverseList ( _ head: ListNode?) -> ListNode? {
+        var cur = head
+        var pre:ListNode? = nil
+        while cur != nil {
+            let temp = cur?.next
+            cur?.next = pre
+            pre = cur
+            cur = temp
+        }
+        return pre
     }
 }
 
 
+//扩展 两两交换链表中的节点
+//head = [1,2,3,4]
+//输出：[2,1,4,3]
+extension Solution {
+    
+    func swapPairs(_ head: ListNode?) -> ListNode? {
+        if head == nil {
+            return head
+        }
+        let newHead = head?.next
+        head?.next = swapPairs(newHead?.next)
+        newHead?.next = head
+        return newHead
+        
+    }
+}

@@ -34,10 +34,13 @@ public class Solution {
         }
         
         var p = i
+        print("p\(p)")
+        //根节点为 sequence[j] 左子树小于根节点
         while sequence[p] < sequence[j] {
             p += 1
         }
         let m = i
+        print("m\(m)")
         while sequence[m] > sequence[j] {
             p += 1
         }

@@ -33,6 +33,23 @@ public class Solution {
      * @param head ListNode类
      * @return int整型一维数组
      */
+    
+    func printListFromTailToHead1 ( _ head: ListNode?) -> [Int] {
+        // write code here
+        var cur = head
+        var pre:ListNode? = nil
+        var res = [Int]()
+        while cur != nil {
+            let next = cur?.next
+            cur?.next = pre
+            pre = cur
+            res.append(pre!.val)
+            cur = next
+        }
+        return res.reversed()
+        
+    }
+    
     //递归
     func printListFromTailToHead ( _ head: ListNode?) -> [Int] {
         // write code here

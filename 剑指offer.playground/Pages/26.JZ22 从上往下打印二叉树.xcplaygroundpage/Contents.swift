@@ -50,7 +50,6 @@ public class Solution {
             if tree.right != nil {
                 queue.append(tree.right!)
             }
-            
         }
         return res
         

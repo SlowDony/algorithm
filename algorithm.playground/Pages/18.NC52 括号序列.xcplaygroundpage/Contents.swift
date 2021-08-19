@@ -1,16 +1,16 @@
 import Foundation
 /*
-描述
-给出一个仅包含字符'(',')','{','}','['和']',的字符串，判断给出的字符串是否是合法的括号序列
-括号必须以正确的顺序关闭，"()"和"()[]{}"都是合法的括号序列，但"(]"和"([)]"不合法。
-
+ 描述
+ 给出一个仅包含字符'(',')','{','}','['和']',的字符串，判断给出的字符串是否是合法的括号序列
+ 括号必须以正确的顺序关闭，"()"和"()[]{}"都是合法的括号序列，但"(]"和"([)]"不合法。
  
-解题思路:
+ 
+ 解题思路:
  1.压栈和取栈
  '(','[','{' 这三个就压栈
  ')',']','}' 这三个就取栈，取栈时判断一下是不是对应的括号，如果是就取栈成功，不是就不能取。
  这样最后看栈是不是为空，不为空就说明顺序不正确
-*/
+ */
 
 public class Solution {
     /**
@@ -42,5 +42,43 @@ public class Solution {
     }
 }
 
-let sol = Solution()
-sol.isValid("{([]())")
+class Solution1 {
+    func isValid1(_ s: String) -> Bool {
+        let dic:[Character:Character] = ["}":"{",")":"(","]":"["]
+        var stack = [Character]()
+        for c in s {
+            if dic.keys.contains(c){
+                if stack.isEmpty || dic[c] != stack.last{
+                    return false
+                }
+                stack.removeLast()
+            }else{
+                stack.append(c)
+            }
+        }
+        return stack.isEmpty
+    }
+    
+    
+    func isValid(_ s: String) -> Bool {
+        let dict:[Character:Character] = ["}":"{",")":"(","]":"["]
+        var stack = [Character]()
+        
+        for c in s {
+            print(c)
+            print(dict.keys)
+            if dict.keys.contains(c) {
+                if stack.isEmpty || dict[c] != stack.last {
+                    return false
+                }
+                stack.removeLast()
+            }else{
+                stack.append(c)
+            }
+        }
+        return stack.isEmpty
+    }
+}
+
+let sol = Solution1()
+sol.isValid("()")
