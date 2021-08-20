@@ -12,7 +12,7 @@
         <page name='08.NC88 寻找第K大'/>
         <page name='09.NC61 两数之和'/>
         <page name='10.NC33 合并有序链表'/>
-        <page name='11.NC76 用两个栈实现队列(未实现)'/>
+        <page name='11.NC76 用两个栈实现队列'/>
         <page name='12.NC68 跳台阶'/>
         <page name='13.NC50 链表中的节点每k个一组翻转'/>
         <page name='14.NC19 子数组的最大累加和问题'/>
@@ -34,6 +34,5 @@
         <page name='30.NC81 二叉搜索树的第k个结点(Java)'/>
         <page name='31.NC84 完全二叉树结点数'/>
         <page name='32.NC99 树的直径'/>
-        <page name='剑指offer01.找出数组中重复的数组'/>
     </pages>
 </playground>
