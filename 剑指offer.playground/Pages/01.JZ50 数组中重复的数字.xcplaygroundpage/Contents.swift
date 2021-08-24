@@ -12,6 +12,23 @@ import Foundation
 import Foundation
 
  public class Solution {
+    
+    func containsDuplicate(_ nums: [Int]) -> Bool {
+            var map = [Int:Int]()
+            for n in nums {
+                if map.keys.contains(n){
+                    map[n]! += 1
+                }else{
+                    map[n] = 1
+                }
+            }
+            for n in nums {
+                if map[n]! > 1 {
+                    return true
+                }
+            }
+            return false
+        }
  
     ///二分法查找
     func findRepeatNumber1(_ nums: [Int]) -> Int? {
