@@ -15,5 +15,6 @@
         <page name='169. 多数元素'/>
         <page name='贪心算法'/>
         <page name='121. 买卖股票的最佳时机'/>
+        <page name='sort'/>
     </pages>
 </playground>
