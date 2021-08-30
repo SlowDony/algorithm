@@ -24,7 +24,7 @@ class BaseSort: NSObject {
         ---------------------------------------------------------------------------------
                 
         """)
-//        print(arrayList)
+        print(arrayList)
     }
     
     func sortAction(){ }

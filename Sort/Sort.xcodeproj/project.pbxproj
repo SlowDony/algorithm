@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFCA453226DC84C3004B46C1 /* InversionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA453126DC84C3004B46C1 /* InversionSort.swift */; };
 		EFCC13A826D8CA2200358AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC13A726D8CA2200358AF3 /* AppDelegate.swift */; };
 		EFCC13AA26D8CA2200358AF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC13A926D8CA2200358AF3 /* SceneDelegate.swift */; };
 		EFCC13AC26D8CA2200358AF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC13AB26D8CA2200358AF3 /* ViewController.swift */; };
@@ -18,6 +19,8 @@
 		EFCC13DB26D8CA5100358AF3 /* BaseSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC13DA26D8CA5100358AF3 /* BaseSort.swift */; };
 		EFCC13E026D8CA8C00358AF3 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC13DF26D8CA8C00358AF3 /* BubbleSort.swift */; };
 		EFCC13E526D8D44700358AF3 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC13E426D8D44600358AF3 /* QuickSort.swift */; };
+		EFF6FCC926DB356A00860969 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FCC826DB356A00860969 /* SelectionSort.swift */; };
+		EFF6FCCE26DB40F900860969 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6FCCD26DB40F900860969 /* HeapSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EFCA453126DC84C3004B46C1 /* InversionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InversionSort.swift; sourceTree = "<group>"; };
 		EFCC13A426D8CA2200358AF3 /* Sort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCC13A726D8CA2200358AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCC13A926D8CA2200358AF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		EFCC13DA26D8CA5100358AF3 /* BaseSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSort.swift; sourceTree = "<group>"; };
 		EFCC13DF26D8CA8C00358AF3 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		EFCC13E426D8D44600358AF3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		EFF6FCC826DB356A00860969 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
+		EFF6FCCD26DB40F900860969 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,9 @@
 				EFCC13DA26D8CA5100358AF3 /* BaseSort.swift */,
 				EFCC13DF26D8CA8C00358AF3 /* BubbleSort.swift */,
 				EFCC13E426D8D44600358AF3 /* QuickSort.swift */,
+				EFF6FCC826DB356A00860969 /* SelectionSort.swift */,
+				EFF6FCCD26DB40F900860969 /* HeapSort.swift */,
+				EFCA453126DC84C3004B46C1 /* InversionSort.swift */,
 				EFCC13AD26D8CA2200358AF3 /* Main.storyboard */,
 				EFCC13B026D8CA2900358AF3 /* Assets.xcassets */,
 				EFCC13B226D8CA2900358AF3 /* LaunchScreen.storyboard */,
@@ -269,10 +278,13 @@
 			files = (
 				EFCC13DB26D8CA5100358AF3 /* BaseSort.swift in Sources */,
 				EFCC13E526D8D44700358AF3 /* QuickSort.swift in Sources */,
+				EFF6FCC926DB356A00860969 /* SelectionSort.swift in Sources */,
 				EFCC13AC26D8CA2200358AF3 /* ViewController.swift in Sources */,
 				EFCC13E026D8CA8C00358AF3 /* BubbleSort.swift in Sources */,
 				EFCC13A826D8CA2200358AF3 /* AppDelegate.swift in Sources */,
 				EFCC13AA26D8CA2200358AF3 /* SceneDelegate.swift in Sources */,
+				EFCA453226DC84C3004B46C1 /* InversionSort.swift in Sources */,
+				EFF6FCCE26DB40F900860969 /* HeapSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

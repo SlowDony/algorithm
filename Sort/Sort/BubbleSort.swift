@@ -5,12 +5,14 @@
 //  Created by slowdony on 2021/8/27.
 //
 
-//冒泡排序
+
 /**
+ 冒泡排序
  两两对比,把最大的一直挪到最后面
  时间复杂度 最好 O(n) 最坏 O(n^2)
  空件复杂度 O(1)
  稳定性:✅
+ In-place:✅
  */
 import Foundation
 class BubbleSort : BaseSort {

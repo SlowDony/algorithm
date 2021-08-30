@@ -6,10 +6,23 @@
 //
 
 import Foundation
-//快速排序 采用分治思想,把一个序列分成一个较大和一个较小序列,然后递归两个子序列
-//首先 定义一个基准 参考数 然后每个元素和这个基准元素对比,大的放在大的序列中,小的放到小的序列中,然后递归比较两个子序列,一次类推,直到比较完
 
-//快速排序的本质就是把每个元素都分成轴点元素时,序列就已经成为排序的
+
+/**
+ 快速排序
+ 采用分治思想,把一个序列分成一个较大和一个较小序列,然后递归两个子序列
+ 
+ 1️⃣.首先 定义一个基准 参考数
+ 2️⃣.然后每个元素和这个基准元素对比,(从后向前,从前向后交替进行)大的放在大的序列中,小的放到小的序列中
+ 3️⃣.然后递归比较两个子序列,一次类推,直到比较完
+
+ 快速排序的本质就是把每个元素都分成轴点元素时,序列就已经成为排序的
+
+ 时间复杂度 最好 O(n) 最坏 O(n^2)
+ 空件复杂度 O(1)
+ 稳定性:❌
+ In-place:✅
+ */
 
 class QuickSort : BaseSort {
     override func sortAction() {
@@ -46,8 +59,6 @@ class QuickSort : BaseSort {
 class QuickSort1: BaseSort {
     
     override func sortAction() {
-        //基准元素
-        //        pivotIndex(&arrayList)
         quickSort( 0, arrayList.count)
     }
     
@@ -75,7 +86,7 @@ class QuickSort1: BaseSort {
                 if cmpValue(pivot, arrayList[j]) < 0 {
                     j -= 1
                 }else{
-//                    arr.swapAt(i, j)
+                    //                    arr.swapAt(i, j)
                     arrayList[i] = arrayList[j]
                     i += 1
                     swapCount += 1
@@ -93,7 +104,7 @@ class QuickSort1: BaseSort {
                 }else{
                     //元素替换完就跳出循环,然后又从右往左循环<---
                     //swap(i, j)
-//                  arr.swapAt(i, j)
+                    //                  arr.swapAt(i, j)
                     arrayList[j] = arrayList[i]
                     j -= 1
                     swapCount += 1
@@ -114,7 +125,6 @@ class QuickSort2: BaseSort
 {
     
     override func sortAction() {
-        //基准元素
         quickSort( 0, arrayList.count)
     }
     
@@ -146,7 +156,7 @@ class QuickSort2: BaseSort
                 if cmpValue(pivot, arrayList[j]) < 0 {
                     j -= 1
                 }else{
-//                    arr.swapAt(i, j)
+                    //arr.swapAt(i, j)
                     arrayList[i] = arrayList[j]
                     i += 1
                     swapCount += 1
@@ -164,7 +174,7 @@ class QuickSort2: BaseSort
                 }else{
                     //元素替换完就跳出循环,然后又从右往左循环<---
                     //swap(i, j)
-//                  arr.swapAt(i, j)
+                    //                  arr.swapAt(i, j)
                     arrayList[j] = arrayList[i]
                     j -= 1
                     swapCount += 1
